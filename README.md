@@ -35,11 +35,38 @@ Once the project is open in Godot:
 
 This project is currently in early development.
 
+### AI-Assisted Development
+
+This project is set up for AI-assisted development with Claude. See [AI_DEVELOPMENT_GUIDE.md](AI_DEVELOPMENT_GUIDE.md) for details on how to effectively use AI to build your game.
+
+**Quick Start with AI:**
+- Read [AI_DEVELOPMENT_GUIDE.md](AI_DEVELOPMENT_GUIDE.md) for best practices
+- See [GODOT_CONTEXT.md](GODOT_CONTEXT.md) for Godot conventions used in this project
+- Start creating by asking Claude to build scenes, scripts, and features
+
 ## Project Structure
 
-- `project.godot` - Main project configuration file
-- `icon.svg` - Project icon
-- `.godot/` - Godot engine cache and build files (excluded from git)
+```
+dungeon-inc/
+├── scenes/          # Scene files (.tscn)
+│   ├── main/       # Main game scenes
+│   ├── ui/         # UI scenes
+│   ├── characters/ # Character/entity scenes
+│   └── levels/     # Level scenes
+├── scripts/        # GDScript files (.gd)
+│   ├── autoload/   # Singleton/autoload scripts
+│   ├── resources/  # Custom resource scripts
+│   └── utils/      # Utility scripts
+├── assets/         # Game assets
+│   ├── sprites/    # 2D sprites and textures
+│   ├── audio/      # Sound effects and music
+│   └── fonts/      # Font files
+├── resources/      # Godot resource files
+├── addons/         # Third-party plugins
+├── project.godot   # Main project configuration
+├── GODOT_CONTEXT.md       # Godot development conventions
+└── AI_DEVELOPMENT_GUIDE.md # Guide for AI-assisted development
+```
 
 ## License
 
